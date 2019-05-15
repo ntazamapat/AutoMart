@@ -1,0 +1,149 @@
+body{
+    padding: 30px;
+    box-sizing:border-box;
+ 
+
+}
+
+.nav__logo{
+    float:left;
+    width:100px;
+}
+[class^="nav__s"]{
+
+    width:80px;
+    float:right;
+}
+.nav::after{
+    content:"";
+    display:table;
+    clear:both;
+}
+.cover{
+    width:100%;
+    height: 80vh;
+}
+
+
+.row{
+    max-width: 1140px;
+    background-color: #eee;
+    margin: 0 auto;
+}
+.row:not(:last-child){
+    margin-bottom:80px;
+}
+
+
+.col-1-of-2{
+    width:calc((100% - 60px)/2);
+    background-color: orangered;
+    float:left;
+}
+.col-1-of-2:not(:last-child){
+    margin-right:60px;
+}
+
+.col-1-of-3{
+    width:calc((100% - 2*60px)/3);
+    background-color: orangered;
+    float:left;
+}
+.col-1-of-3:not(:last-child){
+    margin-right:60px;
+}
+.col-1-of-4{
+    width:calc((100% - 3*60px)/4);
+    background-color: orangered;
+    float:left;
+    text-align:center;
+}
+
+.col-1-of-4:not(:last-child){
+    margin-right:60px;
+}
+
+
+
+.row::after{
+    content:"";
+    display:table;
+    clear:both;
+}
+
+.footer{
+    background-color:black;
+    height:100px;
+
+}
+
+
+/*
+0-600px: Phone
+600-900px: Tablet Landscape
+600 - 900px: Tablet Portrait
+(1200 - 1800px) is where our normal styles apply
+1800px : Big desktop
+
+
+*/
+@media screen and (max-width:1800px){
+
+font-size:75%;
+        
+}
+
+
+    @media screen and (max-width:800px){
+    
+    
+        .col-1-of-4{
+            width:calc((50% - 60px));
+            background-color: orangered;
+            float:left;
+            margin-right: 0px !important;   
+           
+          }
+
+         .col-1-of-4:nth-child(odd){
+           
+            margin-right:100px !important;
+         } 
+         
+          
+
+        
+        }
+    
+        
+
+@media screen and (max-width:620px){
+    
+  .col-1-of-2{
+    width:calc((100% - 30px));
+    background-color: orangered;
+    margin-bottom:10px;
+    margin-right:0px auto !important;
+  
+  }
+  
+  .col-1-of-3{
+    width:calc((100% - 30px));
+    background-color: orangered;
+    
+    margin-bottom:10px;
+    margin-right:0px auto !important;
+  
+  }
+  .col-1-of-4{
+    width:calc((100% - 30px));
+    background-color: orangered;
+    margin-bottom:10px;
+    margin-right:0px auto!important;
+  }
+  
+        
+}
+
+
+
