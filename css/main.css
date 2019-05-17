@@ -34,6 +34,14 @@ html{
    border-radius:5px;
    color:#FDFFFC
 }
+.btn-p{
+ display:inline-block;
+ width:30%;
+ float:right;
+}
+.confirm{
+    width:85%;
+}
 
 .btn-tb-admin{
     display:inline-block;
@@ -252,6 +260,13 @@ btn--sm:hover{
 Sell car css */
 
 
+.total-price{
+    text-align:right;
+    font-weight: bold;
+    font-size:25px;
+    color:#235789
+}
+
 form{
     
     width:100%;
@@ -373,7 +388,7 @@ table{
     margin:20px;
     width:85%;
     border-spacing:40px;
-    margin-bottom:100px;
+    margin-bottom:20px;
 }
 th{
     text-align:left;
@@ -504,6 +519,11 @@ h2{
 
 @media screen and (max-width:600px){
 
+    table{
+        width:30%;
+        font-size:10px;
+    }
+
     .btn-tb-admin{
         display:block;
         width:100%;
@@ -518,8 +538,11 @@ h2{
     .col-1-of-2.car-info{
 
         width:100%;
+        margin-top:100px;
     
     }
+
+    
     
 fieldset.buy{
     height:80vh;
@@ -541,15 +564,23 @@ fieldset.buy{
         float:none;
         text-align:center;
         width:80%;
-        height:50px;
-        line-height:70px;
+        height:15px;
+        font-size:10px;
         margin:0 auto;
         border-bottom :1px solid #EAEAEB;
         clear:both;
     }
+     nav::after{
+         content:"";
+         display:table;
+         clear:both;
+     }
+     .dashboard{
+         margin-top:100px;
+     }
 
-    #toggle:checked + .menu{
-       display:block !important; 
+    #toggle:checked + .menu [class ^="nav"]{
+       display:block; 
     }
 
    
@@ -558,6 +589,11 @@ fieldset.buy{
         font-size:10px;
         background-color:#235789;
         color:#69DDFF;
+    }
+    fieldset{
+        margin-top:100px;
+        margin-bottom:40px;
+        width:50%;
     }
     
     
@@ -593,12 +629,18 @@ fieldset.buy{
 
 @media screen and (max-width:530px){
 
+    table{
+        width:30%;
+        font-size:10px;
+    }
+
+
     .row-search__column{
         display:inline-block;
     }
 
     .menu [class ^="nav"]{
-        display:block !important;
+        display:none;
         float:none;
         text-align:center;
         width:80%;
@@ -612,14 +654,16 @@ fieldset.buy{
        font-size:12px;
    }
    
-    #toggle:checked .nav{margin-bottom:50px; }
+    #toggle:checked + .menu [class ^="nav"]{
+        display:block ;
+     }
 
     label{
         font-size:12px;
     }
     
     fieldset{
-        margin-top:20px;
+        margin-top:100px;
         margin-bottom:40px;
         width:50%;
     }
