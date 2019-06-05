@@ -378,7 +378,49 @@ th , td{
  tr:nth-child(even){
      background-color:#EAEAEB;
  }
-        
+      
+ 
+/* Searching in the table */
+
+.row-search{
+    background:linear-gradient(to left,#235789,#69DDFF);
+    width:90%;
+    margin:20px auto;
+}
+.row-search::after{
+    content:"";
+    display:table;
+    clear:both;
+}
+
+.row-search input{
+    display:inline-block;
+    margin-left:20px;
+    height:30px;
+    margin-right:5px;
+    border-radius:4px;
+}
+.row-search__column{
+    display:block;
+    width:25%;
+    float:left
+}
+
+hr{
+    color:#8C5E58
+
+}
+.label-search{
+    display:block;
+    text-align:center;
+    margin-bottom: 10px;
+
+
+}
+h2{
+    display:inline-block;
+    width:70%;
+}
 /*
 0-600px: Phone
 600-900px: Tablet Landscape
@@ -435,6 +477,12 @@ th , td{
 
 
 @media screen and (max-width:600px){
+
+    .row-search__column{
+        display:block;
+        width:50%;
+       
+    }
     
     .col-1-of-2.car-info{
 
@@ -513,6 +561,10 @@ fieldset.buy{
 }
 
 @media screen and (max-width:530px){
+
+    .row-search__column{
+        display:inline-block;
+        
 
     .menu [class ^="nav"]{
         display:block !important;
