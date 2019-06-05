@@ -25,6 +25,17 @@ html{
     transition:.6s;
     
 }
+
+.btn-tb{
+    width:50%;
+    height:20px;
+    background: linear-gradient(to left, rgb(253, 116, 108), rgb(255, 144, 104));
+   font-size:12px;
+   border-radius:5px;
+   color:#FDFFFC
+}
+
+
 .btn:hover{
     background:orangered;
     
@@ -337,6 +348,36 @@ fieldset.buy{
     color:#235789 
 }
 
+
+table{
+    margin:20px;
+    width:85%;
+    border-spacing:40px;
+    margin-bottom:100px;
+}
+th{
+    text-align:left;
+    background-color:#69DDFF;
+    color:#235789;
+    
+}
+table,th , td{
+   border:none; 
+   border-collapse:collapse;
+}
+
+
+th , td{
+   padding:20px;
+
+ }
+ tr{
+     border:none;
+ }
+
+ tr:nth-child(even){
+     background-color:#EAEAEB;
+ }
         
 /*
 0-600px: Phone
