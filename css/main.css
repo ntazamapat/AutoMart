@@ -1,11 +1,14 @@
 body{
-    padding: 30px;
+    margin:30px;
     box-sizing:border-box;
+    color:
+    
  
 
 }
 
 .nav__logo{
+    
     float:left;
     width:100px;
 }
@@ -122,17 +125,31 @@ font-size:75%;
  /* Sign up Page css       
    Create a Modal   */
 
-  .signup {
+  .signup{
       width:92vw;
       height:100%;
       position: absolute;
-      background : rgba(0,0,0,0.7);
+      background : rgba(82, 66, 66, 0.7);
       top:0;
       display:none;
+      scroll-behavior: initial;
+      
 
       
 
   }  
+  .signIn{
+    width:92vw;
+    height:100%;
+    position: absolute;
+    background : rgba(0,0,0,0.7);
+    top:0;
+    display:none;
+    
+
+  }
+
+
   .signup__form{
      width: 400px;
      height:500px;
