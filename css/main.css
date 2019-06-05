@@ -5,7 +5,7 @@ body{
     height:100vh;
     font-family: roboto;
     /* border: 1px solid lightslategray; */
- 
+    color:  #696969 ;
 
 }
 html{
@@ -32,7 +32,8 @@ html{
     background: linear-gradient(to left, rgb(253, 116, 108), rgb(255, 144, 104));
    font-size:12px;
    border-radius:5px;
-   color:#FDFFFC
+   color:#FDFFFC;
+   line-height:25px !important;
 }
 .btn-p{
  display:inline-block;
@@ -47,6 +48,7 @@ html{
     display:inline-block;
     width:30%;
     height:20px;
+    line-height:25px !important;
     font-size:10px;
     margin-left:5px;
 
@@ -64,6 +66,7 @@ html{
     font-size:12px;
     display:inline-block !important;
     width:30%;
+    line-height:25px !important;
     height:20px;
     color:#235789;
     font-weight: bold;
@@ -73,15 +76,37 @@ btn--sm:hover{
     border:1px solid #235789;
 }
 
-.nav{
-    height:70px;
+.user-type [class^="nav"]{
+border-left:1px solid orangered;
+color:orangered !important;
+font-weight:bold;
   
 }
+.btn{text-decoration:none;
+   color:#235789;
+line-height:40px;}
+
+.nav{
+    background-color: rgba(234,234,234,.8)
+}
+.nav a{
+    text-decoration:none;
+   
+    color:#235789;
+    border-radius;2px;
+    height:80px;
+    font-size:14px;
+    
+    
+  
+}
+
 .nav__logo{
     margin:10px;
     float:left;
     width:100px;
-    color:#69DDFF !important;
+    font-size:20px;
+ 
 }
 [class^="nav__s"]{
     margin:10px;
@@ -125,6 +150,19 @@ btn--sm:hover{
 .row:not(:last-child){
     margin-bottom:80px;
 }
+.pagination{
+    
+    position:relative;
+    top:-40px;
+    text-align:center;
+
+}
+.pagination a {
+    font-size:12px;
+    color:#235789;
+    border-bottom: 1px dashed orangered;
+}
+
 
 
 .col-1-of-2{
@@ -150,7 +188,7 @@ btn--sm:hover{
     background-color: #FDFFFC;
     float:left;
     text-align:center;
-    border: 1px solid #69DDFF;
+    box-shadow: 5px 0 25px  rgba(0,0,0,0.5));
 }
 
 .col-1-of-4:not(:last-child){
@@ -248,14 +286,18 @@ btn--sm:hover{
       margin: 20px auto;
       border-radius:2px;
      }
-  a{
-      text-decoration:none;
-      color:black;
-      letter-spacing: 2px;
-      padding-top:10px;
-    }
-
  
+
+ .background{
+     background-image: url('/images/cover-car.jpg');
+     background-size:cover;
+    
+     background-position: center;
+     background-color:rgb(15, 47, 77);
+     background-blend-mode:color-dodge;
+     margin-bottom:100px;
+     
+ }
 /* 
 Sell car css */
 
@@ -420,7 +462,7 @@ th , td{
 .row-search{
     background:linear-gradient(to left,#235789,#69DDFF);
     width:90%;
-    margin:20px auto;
+    margin:70px auto;
 }
 .row-search::after{
     content:"";
@@ -442,16 +484,21 @@ th , td{
 }
 
 hr{
-    color:#8C5E58
+    color: rgba(241,211,2,0.3)
 
 }
 .label-search{
     display:block;
     text-align:center;
     margin-bottom: 10px;
+    color:black;
 
 
 }
+select{
+    color:orangered !important;
+}
+
 h2{
     display:inline-block;
     width:70%;
