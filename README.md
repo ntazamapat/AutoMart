@@ -1,7 +1,7 @@
 
  # AutoMart UI
 
-FrontEnd development for a car selling application
+Front-End development for a car selling application
 
 ## Description
 
@@ -9,27 +9,24 @@ Auto Mart is an online marketplace for automobiles of diverse makes, model or bo
 Auto Mart, users can sell their cars or buy from trusted dealerships or private sellers.
 
 ## Tools
-   ### HTML
-   ### CSS
-   ### Javascript
-   
-  
+    HTML
+    CSS
+    Javascript
+    
 
 ### Dependencies
 
 * No dependencies
-* ex. Windows 10
+
 
 ### Installing
 
 * Clone the project : https://github.com/ntazamapat/AutoMart.git
 
 
-
 ## Authors
 
 Ntazama Patrick
-
 
 
 ## License
